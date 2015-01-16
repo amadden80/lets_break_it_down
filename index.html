@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>
+    Break It Down.
+  </title>
+
+  <style>
+
+  body{
+    background-color: lightblue;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  #face{
+    width: 200px;
+    -webkit-animation: enterWithStyle 3s;
+  }
+
+  #face-box{
+    text-align: center
+  }
+
+  @-webkit-keyframes enterWithStyle {
+    0%{
+      width: 0px;
+    }
+
+    25%{
+      width: 300px;
+    }
+
+    100%{
+      -webkit-transform: rotate(360deg);
+      width: 200px;
+    }
+
+  }
+
+
+
+  </style>
+
+  <script>
+
+    function welcomeUser(){
+
+      var message = 'Welcome!  Nice to meet you!';
+
+      alert( message );
+
+    }
+
+    setTimeout(welcomeUser, 5000);
+
+  </script>
+
+</head>
+
+<body>
+
+
+  <div id='face-box'>
+    <img id='face' src='http://andrewmadden.com/face.png'/>
+  </div>
+
+  <h2>
+    Let's Break It Down!
+  </h2>
+
+  <p>
+    Web Dev includes scattered teachnologies...
+    The hard part... is just collecting them all..
+    And... making them work together...
+  </p>
+
+
+  <div id='resources' >
+
+    <h3>
+      Online Resources:
+    </h3>
+
+    <ul>
+      <li>
+        <a href='https://developer.mozilla.org/en-US/'>
+          Mozilla Developer Network
+        </a>
+      </li>
+      <li>
+        <a href='http://dash.generalassemb.ly/'>
+          DASH (GA)
+        </a>
+      </li>
+      <li>
+        <a href='http://scratchpad.io/'>
+          ScratchPad
+        </a>
+      </li>
+    </ul>
+
+
+
+    <h3>
+      In Person Classes:
+    </h3>
+
+    <ul>
+      <li>
+        <a href='http://generalassemb.ly'>
+          General Assembly
+        </a>
+      </li>
+    </ul>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
